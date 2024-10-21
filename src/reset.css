@@ -7,7 +7,17 @@
 }
 
 :root {
-  background-color: #242424;
+  --tile-size: 100px;
+  --light-tile: #f0d8b7;
+  --dark-tile: #b48764;
+  --bg-color: #242424;
+  font-family: "Mulish", sans-serif;
+}
+
+@media only screen and (max-width: 1366px) {
+  :root {
+    --title-size: 50px;
+  }
 }
 
 img {
