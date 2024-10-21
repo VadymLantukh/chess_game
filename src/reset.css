@@ -10,8 +10,8 @@
   --tile-size: 100px;
   --light-tile: #f0d8b7;
   --dark-tile: #b48764;
-  --bg-color: #242424;
   font-family: "Mulish", sans-serif;
+  background-color: #242424;
 }
 
 @media only screen and (max-width: 1366px) {

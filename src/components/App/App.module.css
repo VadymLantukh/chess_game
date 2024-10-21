@@ -1,7 +1,4 @@
-@import "../../reset.css";
-
 .boxApp {
   display: grid;
   place-content: center;
-  background-color: var(--bg-color);
 }

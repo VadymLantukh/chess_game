@@ -3,5 +3,5 @@
   grid-column: 2;
   justify-content: space-around;
   color: var(--dark-tile);
-  height: calc(0.25 * var(--dark-tile));
+  font-size: 20px;
 }
