@@ -1,5 +1,5 @@
-import { getCharacter } from "../../helpers/getCharacter";
 import Files from "../Files/Files";
+import Pieces from "../Pieces/Pieces";
 import Ranks from "../Ranks/Ranks";
 import css from "./Board.module.css";
 
@@ -10,11 +10,11 @@ const Board = () => {
 
   const files = Array(8)
     .fill()
-    .map((x, i) => getCharacter(i));
+    .map((x, i) => i + 1);
 
   const getClassName = (i, j) => {
     let c = css.itemTile;
-    c += (i + j) % 2 === 0 ? ` ${css["tile--light"]}` : ` ${css["tile--dark"]}`;
+    c += (i + j) % 2 === 0 ? ` ${css["tile--dark"]}` : ` ${css["tile--light"]}`;
     return c;
   };
 
@@ -25,11 +25,12 @@ const Board = () => {
       <ul className={css.listTiles}>
         {ranks.map((rank, i) =>
           files.map((file, j) => (
-            <li className={getClassName(i, j)} key={file + "-" + rank}></li>
+            <li className={getClassName(9 - i, j)} key={file + "-" + rank}></li>
           ))
         )}
       </ul>
 
+      <Pieces />
       <Files files={files} />
     </div>
   );

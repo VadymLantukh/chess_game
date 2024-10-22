@@ -1,0 +1,44 @@
+.piece {
+  position: absolute;
+  width: 12.5%;
+  height: 12.5%;
+  background-size: 100%;
+}
+
+.piece.bk {
+  background-image: url(../../../src/image/blackChess/king.png);
+}
+.piece.bq {
+  background-image: url(../../../src/image/blackChess/queen.png);
+}
+.piece.br {
+  background-image: url(../../../src/image/blackChess/rook.png);
+}
+.piece.bb {
+  background-image: url(../../../src/image/blackChess/bishop.png);
+}
+.piece.bp {
+  background-image: url(../../../src/image/blackChess/pawn.png);
+}
+.piece.bh {
+  background-image: url(../../../src/image/blackChess/horse.png);
+}
+
+.piece.wk {
+  background-image: url(../../../src/image/whiteChess/king.png);
+}
+.piece.wq {
+  background-image: url(../../../src/image/whiteChess/queen.png);
+}
+.piece.wr {
+  background-image: url(../../../src/image/whiteChess/rook.png);
+}
+.piece.wb {
+  background-image: url(../../../src/image/whiteChess/bishop.png);
+}
+.piece.wp {
+  background-image: url(../../../src/image/whiteChess/pawn.png);
+}
+.piece.wh {
+  background-image: url(../../../src/image/whiteChess/horse.png);
+}
