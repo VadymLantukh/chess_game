@@ -1,11 +1,10 @@
+import { useState } from "react";
+import { createPosition } from "../../helpers/createPosition";
 import Piece from "../Piece/Piece";
 import css from "./Pieces.module.css";
 
 const Pieces = () => {
-  const position = new Array(8).fill("").map((x) => new Array(8).fill(""));
-
-  position[0][0] = "wr";
-  position[7][7] = "br";
+  const [position, setPosition] = useState(createPosition());
 
   console.log(position);
   return (
