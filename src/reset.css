@@ -20,6 +20,13 @@
   }
 }
 
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   display: block;
   max-width: 100%;
